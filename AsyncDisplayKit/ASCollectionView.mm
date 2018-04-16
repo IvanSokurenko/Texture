@@ -1301,7 +1301,7 @@ static NSString * const kCellReuseIdentifier = @"_ASCollectionViewCell";
 
 #pragma mark - UICollectionView dead-end intercepts
 
-#if ASDISPLAYNODE_ASSERTIONS_ENABLED // Remove implementations entirely for efficiency if not asserting.
+#if !defined(NS_BLOCK_ASSERTIONS) // Remove implementations entirely for efficiency if not asserting.
 
 // intercepted due to not being supported by ASCollectionView (prevent bugs caused by usage)
 
